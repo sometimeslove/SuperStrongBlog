@@ -17,6 +17,7 @@ from django.contrib.sitemaps import ping_google
 import requests
 from django.conf import settings
 import logging
+import re
 
 logger = logging.getLogger(__name__)
 
@@ -43,3 +44,27 @@ class SpiderNotify():
 
         SpiderNotify.baidu_notify(url)
         SpiderNotify.__google_notify()
+
+    def push_urls( urls):
+        headers = {
+            'User-Agent': 'curl/7.12.1',
+            'Host': 'data.zz.baidu.com',
+            'Content - Type': 'text / plain',
+            'Content - Length': '83'
+        }
+        try:
+            html = requests.post(settings.BAIDU_NOTIFY_URL, headers=headers, data=urls, timeout=5).text
+            return html
+        except:
+            return "{'error':404,'message':'请求超时，接口地址错误！'}"
+
+    @staticmethod
+    def get_urls(url):
+        '''提取网站sitemap中所有链接，参数必须是sitemap的链接'''
+        try:
+            html = requests.get(url,timeout=5).text
+        except:
+            return 'miss'
+        else:
+            urls = re.findall('<loc>(.*?)</loc>', html)
+            return '\n'.join(urls)
