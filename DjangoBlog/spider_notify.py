@@ -45,7 +45,7 @@ class SpiderNotify():
         SpiderNotify.baidu_notify(url)
         SpiderNotify.__google_notify()
 
-     @staticmethod
+    @staticmethod
     def push_urls( urls):
         headers = {
             'User-Agent': 'curl/7.12.1',
