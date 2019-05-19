@@ -244,6 +244,21 @@ class ArchivesView(ArticleListView):
         cache_key = 'archives'
         return cache_key
 
+class ResumeView(ArticleListView):
+    '''
+    个人简历页面
+    '''
+    page_type = '博主简介'
+    paginate_by = None
+    page_kwarg = None
+    template_name = 'blog/article_resume.html'
+
+    def get_queryset_data(self):
+        return Article.objects.filter(title='博主简介').all()
+
+    def get_queryset_cache_key(self):
+        cache_key = 'resume'
+        return cache_key
 
 @csrf_exempt
 def fileupload(request):
