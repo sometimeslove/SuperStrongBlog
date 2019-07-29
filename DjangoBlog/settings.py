@@ -27,7 +27,7 @@ DEBUG = True
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'example.com']
+ALLOWED_HOSTS = ['*', '127.0.0.1','39.96.162.90', 'suerstrongz.com']
 # Application definition
 
 
@@ -202,7 +202,7 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = os.environ.get('DJANGO_EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-SERVER_EMAIL = os.environ.get('DJANGO_EMAIL_USER')
+SERVER_EMAIL = os.environ.get('DJANGO_EMAL_USER')
 # 设置debug=false 未处理异常邮件通知
 ADMINS = [('liangliang', 'liangliangyy@gmail.com')]
 # 微信管理员密码(两次md5获得)
