@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NAME="DjangoBlog"
-DJANGODIR=/root/myweb/DjangoBlog
-SOCKFILE=/root/myweb/DjangoBlog/run/gunicorn.sock
+DJANGODIR=/root/www.superstrong,com/SuperStrongBlog
+SOCKFILE=/root/www.superstrong,com/SuperStrongBlog/run/gunicorn.sock
 USER=root # the user to run as
 GROUP=root # the group to run as
 NUM_WORKERS=2 # how many worker processes should Gunicorn spawn
