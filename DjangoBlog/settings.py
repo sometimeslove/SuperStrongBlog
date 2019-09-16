@@ -22,12 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'n9ceqv38)#&mwuat@(mjb_p%em$e8$qyr#fw9ot!=ba6lijx-6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = False
+# DEBUG = True
+DEBUG = False
 TESTING = len(sys.argv) > 1 and sys.argv[1] == 'test'
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['*', '127.0.0.1', 'example.com']
+ALLOWED_HOSTS = ['*', '127.0.0.1', 'superstrongz.com']
 # Application definition
 
 
@@ -197,14 +197,14 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_USE_TLS = True
 EMAIL_USE_SSL = True
 
-EMAIL_HOST = 'smtp.mxhichina.com'
-EMAIL_PORT = 465
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
 EMAIL_HOST_USER = os.environ.get('DJANGO_EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('DJANGO_EMAIL_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = os.environ.get('DJANGO_EMAIL_USER')
 # 设置debug=false 未处理异常邮件通知
-ADMINS = [('liangliang', 'liangliangyy@gmail.com')]
+ADMINS = [('superstrong', 'cumtsuperstrong@163.com')]
 # 微信管理员密码(两次md5获得)
 WXADMIN = '995F03AC401D6CABABAEF756FC4D43C7'
 

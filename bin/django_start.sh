@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NAME="DjangoBlog"
-DJANGODIR=/ENV/python3/DjangoBlog
-SOCKFILE=/ENV/python3/run/gunicorn.sock
+DJANGODIR=/root/ENV/python3/DjangoBlog
+SOCKFILE=/root/ENV/python3/run/gunicorn.sock
 USER=root # the user to run as
 GROUP=root # the group to run as
 NUM_WORKERS=2 # how many worker processes should Gunicorn spawn
