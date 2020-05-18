@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: utils.py
-@time: 2017/1/19 上午2:30
+@time: ??
 """
 from django.core.cache import cache
 from django.contrib.sites.models import Site

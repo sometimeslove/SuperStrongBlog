@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence 
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: urls.py
-@time: 2018/2/25 下午3:04
+@time: ??
 """
 from django.urls import path
 from . import views

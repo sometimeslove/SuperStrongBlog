@@ -22,7 +22,7 @@ class ArticleTest(TestCase):
 
     def test_validate_article(self):
         site = get_current_site().domain
-        user = BlogUser.objects.get_or_create(email="liangliangyy@gmail.com", username="liangliangyy")[0]
+        user = BlogUser.objects.get_or_create(email="857508399@qq.com", username="liangliangyy")[0]
         user.set_password("liangliangyy")
         user.is_staff = True
         user.is_superuser = True
@@ -117,8 +117,8 @@ class ArticleTest(TestCase):
         SpiderNotify.baidu_notify([article.get_full_url()])
 
         from blog.templatetags.blog_tags import gravatar_url, gravatar
-        u = gravatar_url('liangliangyy@gmail.com')
-        u = gravatar('liangliangyy@gmail.com')
+        u = gravatar_url('857508399@qq.com')
+        u = gravatar('857508399@qq.com')
 
     def __check_pagination__(self, p, type, value):
         s = load_pagination_info(p.page(1), type, value)

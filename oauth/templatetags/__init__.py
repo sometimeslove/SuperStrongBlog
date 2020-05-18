@@ -4,11 +4,11 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence 
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: __init__.py
-@time: 2017/3/4 下午3:22
+@time: ??
 """

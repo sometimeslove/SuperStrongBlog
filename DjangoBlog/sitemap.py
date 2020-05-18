@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: sitemap.py
-@time: 2016/12/15 下午10:26
+@time: ??
 """
 
 from django.contrib.sitemaps import Sitemap

@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: forms.py
-@time: 2016/11/12 下午2:45
+@time: ??
 """
 from .models import Comment
 from django import forms

@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: ping_baidu.py
-@time: 2017/1/17 下午15:29
+@time: ??
 """
 
 from django.core.management.base import BaseCommand, CommandError

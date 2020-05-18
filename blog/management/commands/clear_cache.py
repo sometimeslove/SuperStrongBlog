@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence 
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: clear_cache.py
-@time: 2017/2/17 下午10:30
+@time: ??
 """
 from DjangoBlog.utils import cache
 from django.core.management.base import BaseCommand

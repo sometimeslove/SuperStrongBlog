@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence 
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: MemcacheStorage.py
-@time: 2017/8/27 上午2:42
+@time: ??
 """
 from werobot.session import SessionStorage
 from werobot.utils import json_loads, json_dumps

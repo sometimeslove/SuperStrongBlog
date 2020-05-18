@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: context_processors.py
-@time: 2016/11/6 下午4:23
+@time: ??
 """
 from .models import Category, Article, Tag, BlogSettings
 from django.conf import settings

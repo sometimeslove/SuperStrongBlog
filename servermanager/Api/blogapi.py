@@ -4,13 +4,13 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence 
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: blogapi.py
-@time: 2017/8/27 上午11:40
+@time: ??
 """
 from blog.models import Article, Category, Tag
 from haystack.query import EmptySearchQuerySet, SearchQuerySet

@@ -2,13 +2,13 @@
 # encoding: utf-8
 """
 @version: ??
-@author: liangliangyy
+@author: superstrongz
 @license: MIT Licence 
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.net/
+@contact: 857508399@qq.com
+@site: http://www.superstrongz.com/
 @software: PyCharm
 @file: documents.py
-@time: 2019-04-05 13:05
+@time: ??
 """
 
 from django_elasticsearch_dsl import DocType, Index, fields
