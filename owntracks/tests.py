@@ -35,10 +35,10 @@ class OwnTrackLogTest(TestCase):
         rsp = self.client.get('/owntracks/show_maps')
         self.assertEqual(rsp.status_code, 302)
 
-        user = BlogUser.objects.create_superuser(email="liangliangyy1@gmail.com",
-                                                 username="liangliangyy1", password="liangliangyy1")
+        user = BlogUser.objects.create_superuser(email="superstrongz1@gmail.com",
+                                                 username="superstrongz1", password="superstrongz1")
 
-        self.client.login(username='liangliangyy1', password='liangliangyy1')
+        self.client.login(username='superstrongz1', password='superstrongz1')
         s = OwnTrackLog()
         s.tid = 12
         s.lon = 123.234

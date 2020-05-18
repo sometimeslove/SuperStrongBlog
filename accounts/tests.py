@@ -17,11 +17,11 @@ class AccountTest(TestCase):
 
     def test_validate_account(self):
         site = get_current_site().domain
-        user = BlogUser.objects.create_superuser(email="liangliangyy1@gmail.com",
-                                                 username="liangliangyy1", password="qwer!@#$ggg")
-        testuser = BlogUser.objects.get(username='liangliangyy1')
+        user = BlogUser.objects.create_superuser(email="superstrongz1@gmail.com",
+                                                 username="superstrongz1", password="qwer!@#$ggg")
+        testuser = BlogUser.objects.get(username='superstrongz1')
 
-        loginresult = self.client.login(username='liangliangyy1', password='qwer!@#$ggg')
+        loginresult = self.client.login(username='superstrongz1', password='qwer!@#$ggg')
         self.assertEqual(loginresult, True)
         response = self.client.get('/admin/')
         self.assertEqual(response.status_code, 200)

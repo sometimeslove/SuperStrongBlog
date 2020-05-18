@@ -22,8 +22,8 @@ class ArticleTest(TestCase):
 
     def test_validate_article(self):
         site = get_current_site().domain
-        user = BlogUser.objects.get_or_create(email="857508399@qq.com", username="liangliangyy")[0]
-        user.set_password("liangliangyy")
+        user = BlogUser.objects.get_or_create(email="857508399@qq.com", username="superstrongz")[0]
+        user.set_password("superstrongz")
         user.is_staff = True
         user.is_superuser = True
         user.save()
@@ -91,7 +91,7 @@ class ArticleTest(TestCase):
         rsp = self.client.get('/refresh')
         self.assertEqual(rsp.status_code, 302)
 
-        self.client.login(username='liangliangyy', password='liangliangyy')
+        self.client.login(username='superstrongz', password='superstrongz')
         rsp = self.client.get('/refresh')
         self.assertEqual(rsp.status_code, 200)
 
@@ -104,15 +104,15 @@ class ArticleTest(TestCase):
         p = Paginator(Article.objects.filter(tags=tag), 2)
         self.__check_pagination__(p, '分类标签归档', tag.slug)
 
-        p = Paginator(Article.objects.filter(author__username='liangliangyy'), 2)
-        self.__check_pagination__(p, '作者文章归档', 'liangliangyy')
+        p = Paginator(Article.objects.filter(author__username='superstrongz'), 2)
+        self.__check_pagination__(p, '作者文章归档', 'superstrongz')
 
         p = Paginator(Article.objects.filter(category=category), 2)
         self.__check_pagination__(p, '分类目录归档', category.slug)
 
         f = BlogSearchForm()
         f.search()
-        self.client.login(username='liangliangyy', password='liangliangyy')
+        self.client.login(username='superstrongz', password='superstrongz')
         from DjangoBlog.spider_notify import SpiderNotify
         SpiderNotify.baidu_notify([article.get_full_url()])
 
@@ -136,10 +136,10 @@ class ArticleTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_validate_feed(self):
-        user = BlogUser.objects.get_or_create(email="liangliangyy12@gmail.com", username="liangliangyy")[0]
-        user.set_password("liangliangyy")
+        user = BlogUser.objects.get_or_create(email="superstrongz12@gmail.com", username="superstrongz")[0]
+        user.set_password("superstrongz")
         user.save()
-        self.client.login(username='liangliangyy', password='liangliangyy')
+        self.client.login(username='superstrongz', password='superstrongz')
 
         rsp = self.client.get('/refresh')
         self.assertEqual(rsp.status_code, 403)
